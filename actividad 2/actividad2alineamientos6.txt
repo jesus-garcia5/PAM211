@@ -1,0 +1,57 @@
+import java.util.scanner;
+
+public class PAM {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.printf("\n==== menu ====\n");
+            System.out.printf("1. reglamento \n");
+            System.out.printf("2. Lineamientos classroom\n");
+            System.out.printf("3. fechas de parciales\n");
+            System.out.printf("4. porcentajes por parcial\n");
+            System.out.printf("0. salir\n");
+            System.out.printf("Selecciona una opcion: ");
+            opcion = scanner.nextInt();
+
+            System.out.println();
+
+            switch (opcion) {
+                case 1:
+                    System.out.printf("reglamento:\n");
+                    System.out.printf("1.Se requiere 80% de asistencia para tener derecho a evaluación parcial y 80% de trabajos en clase.\n");
+                    System.out.printf("2.Se permiten 10 minutos de tolerancia y si el alumno llega después de este tiempo puede permanecer en la clase\n");
+                    System.out.printf("3. Las faltas deberán estar justificadas mediante el correo institucional \n");
+                    System.out.printf("4. Las tareas y trabajos deberán subirlas al Classroom de forma individual y no se recibirán de manera extemporánea\n");
+                     System.out.printf("5. Las tareas y trabajos presentarlos en tiempo y forma.\n");
+                    break;
+                case 2:
+                    System.out.printf("lineamientos de classroom:\n");
+                    break;
+                case 3:
+                    System.out.printf(" fechas de parciales:\n");
+                    System.out.printf("- Parcial 1: 1 de septiembre a 3 octubre \n");
+                    System.out.printf("- Parcial 2: 6 de octubre a 7 de noviembre\n");
+                    System.out.printf("- Parcial 3: 10 de noviembre a 5 de diciembre\n");
+                    break;
+                case 4:
+                    System.out.printf("porcentajes de parciales:\n");
+                    System.out.printf("- Parcial 1: conocimiento 40%, desempeño 20%, producto 30%, pi 10% \n" );
+                    System.out.printf("- Parcial 2: conocimiento 40%, desempeño 20%, producto 20%, pi 20%\n");
+                    System.out.printf("- Parcial 3: conocimiento 20%, desempeño 10%, producto 40%, pi 30%\n");
+                    break;
+                case 0:
+                    System.out.printf(" saliendo del programa...\n");
+                    break;
+                default:
+                    System.out.printf(" opción invalida.\n");
+            }
+        } while (opcion != 0);
+
+        scanner.close();
+    }
+}
+
+
