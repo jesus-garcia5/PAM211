@@ -1,0 +1,17 @@
+
+const productos = [
+  { nombre: "Laptop", precio: 12000 },
+  { nombre: "Mouse", precio: 250 },
+  { nombre: "Teclado", precio: 750 },
+  { nombre: "Monitor", precio: 3000 }
+];
+
+const filtrados = productos.filter(function(producto) {
+  return producto.precio > 1000;
+});
+
+const nombres = filtrados.map(function(producto) {
+  return producto.nombre;
+});
+
+console.log("Nombres de productos con precio mayor a 1000: " + nombres);
